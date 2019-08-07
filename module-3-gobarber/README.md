@@ -3,12 +3,14 @@
 
 ### Configurações dos arquivos eslint, prettier e sequelize
 .prettier 
+`
 {
   "singleQuote": true,
   "trailingComma": "es5"
 }
 `
 .eslint 
+`
 module.exports = {
   env: {
     es6: true,
@@ -40,8 +42,10 @@ module.exports = {
   
   },
 };
+`
 
 .sequelize
+`
 const { resolve } = require('path');
 
 module.exports = {
