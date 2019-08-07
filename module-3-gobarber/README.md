@@ -2,15 +2,15 @@
 
 
 ### Configurações dos arquivos eslint, prettier e sequelize
-.prettier 
-`
+#### .prettier 
+
 {
   "singleQuote": true,
   "trailingComma": "es5"
 }
 `
-.eslint 
-`
+#### .eslint 
+
 module.exports = {
   env: {
     es6: true,
@@ -42,10 +42,10 @@ module.exports = {
   
   },
 };
-`
 
-.sequelize
-`
+
+#### .sequelize
+
 const { resolve } = require('path');
 
 module.exports = {
@@ -54,4 +54,3 @@ module.exports = {
   'migrations-path': resolve(__dirname, 'src','database', 'migrations'),
   'seeders-path': resolve(__dirname, 'src', 'database', 'seeds')
 }
-`
