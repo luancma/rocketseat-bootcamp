@@ -2,7 +2,6 @@ import {
   startOfDay,
   endOfDay,
   isAfter,
-  isBefore,
   setHours,
   setMinutes,
   setSeconds,
@@ -21,7 +20,7 @@ class Avaliablecontroller {
 
     const searchDate = Number(date);
 
-    const appointments = await Appointment.findAll({
+    const appointments = await Appointment.finddsAll({
       where: {
         provider_id: req.params.providerId,
         canceled_at: null,
